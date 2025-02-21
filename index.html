@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравления с 8 марта</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Поздравления с 8 марта!</h1>
+    <p>Выберите своё имя, чтобы увидеть персональное поздравление:</p>
+    
+    <div id="buttons">
+        <button onclick="openPage('lubov')">Любовь</button>
+        <button onclick="openPage('svetlana')">Светлана</button>
+        <button onclick="openPage('alevtina')">Алевтина</button>
+        <button onclick="openPage('maryana')">Марьяна</button>
+        <button onclick="openPage('ekaterina')">Екатерина</button>
+        <button onclick="openPage('olga')">Ольга</button>
+        <button onclick="openPage('yulia')">Юлия</button>
+        <button onclick="openPage('olga-gennadievna')">Ольга Геннадьевна</button>
+        <button onclick="openPage('natalia')">Наталья</button>
+    </div>
+
+    <script>
+        function openPage(name) {
+            window.location.href = name + ".html";
+        }
+    </script>
+</body>
+</html>
+
