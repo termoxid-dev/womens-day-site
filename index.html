@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поздравления с 8 марта</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Поздравления с 8 марта!</h1>
-    <p>Выберите своё имя, чтобы увидеть персональное поздравление:</p>
-    
-    <div id="buttons">
-        <button onclick="openPage('lubov')">Любовь</button>
-        <button onclick="openPage('svetlana')">Светлана</button>
-        <button onclick="openPage('alevtina')">Алевтина</button>
-        <button onclick="openPage('maryana')">Марьяна</button>
-        <button onclick="openPage('ekaterina')">Екатерина</button>
-        <button onclick="openPage('olga')">Ольга</button>
-        <button onclick="openPage('yulia')">Юлия</button>
-        <button onclick="openPage('olga-gennadievna')">Ольга Геннадьевна</button>
-        <button onclick="openPage('natalia')">Наталья</button>
+
+    <div class="container">
+        <h1>Поздравления с 8 марта!</h1>
+        <p>Выберите своё имя, чтобы увидеть персональное поздравление:</p>
+
+        <div class="name-buttons">
+            <button onclick="location.href='love.html'">Любовь</button>
+            <button onclick="location.href='svetlana.html'">Светлана</button>
+            <button onclick="location.href='aletina.html'">Алевтина</button>
+            <button onclick="location.href='maryana.html'">Марьяна</button>
+            <button onclick="location.href='ekaterina.html'">Екатерина</button>
+            <button onclick="location.href='olga.html'">Ольга</button>
+            <button onclick="location.href='yulia.html'">Юлия</button>
+            <button onclick="location.href='olga-gennadievna.html'">Ольга Геннадьевна</button>
+            <button onclick="location.href='natalya.html'">Наталья</button>
+        </div>
     </div>
 
-    <script>
-        function openPage(name) {
-            window.location.href = name + ".html";
-        }
-    </script>
-<div class="share-buttons">
-    <a href="https://vk.com/share.php?url=https://termoxid-dev.github.io/womens-day-site" target="_blank">
-        <img src="images/vk.png" alt="VK" class="share-icon">
-    </a>
-    <a href="https://t.me/share/url?url=https://termoxid-dev.github.io/womens-day-site&text=Поздравляю%20с%208%20марта!" target="_blank">
-        <img src="images/telegram.png" alt="Telegram" class="share-icon">
-    </a>
-</div>
+    <!-- Иконки VK и Telegram -->
+    <div class="share-buttons">
+        <a href="https://vk.com/share.php?url=https://termoxid-dev.github.io/womens-day-site" target="_blank">
+            <img src="images/vk.png" alt="VK" class="share-icon">
+        </a>
+        <a href="https://t.me/share/url?url=https://termoxid-dev.github.io/womens-day-site&text=Поздравляю%20с%208%20марта!" target="_blank">
+            <img src="images/telegram.png" alt="Telegram" class="share-icon">
+        </a>
+    </div>
 
 </body>
 </html>

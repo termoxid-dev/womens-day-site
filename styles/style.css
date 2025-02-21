@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #ffe6e6; /* Светлый розовый фон */
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,9 @@ body {
 
 /* Заголовок */
 h1 {
-    color: #333;
+    color: #d63333;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Список кнопок с именами */
@@ -33,7 +35,7 @@ h1 {
 }
 
 .name-buttons button {
-    background-color: #007bff;
+    background-color: #ff4d79;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -44,56 +46,29 @@ h1 {
 }
 
 .name-buttons button:hover {
-    background-color: #0056b3;
+    background-color: #cc004d;
 }
 
-/* Стили для персональной страницы */
-.personal-page {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.personal-page img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.personal-page h2 {
-    color: #333;
-}
-
-/* Музыкальный плеер */
-audio {
-    margin-top: 10px;
-    width: 100%;
-}
-
-/* --- Иконки VK и Telegram внизу страницы --- */
+/* --- Блок с иконками поделиться --- */
 .share-buttons {
     position: fixed;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    gap: 15px;
     padding: 5px 10px;
-    border-radius: 10px;
 }
 
+/* --- Сами иконки VK и Telegram --- */
 .share-icon {
-    width: 40px; /* Размер иконок */
-    height: 40px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
-    transition: opacity 0.3s;
+    transition: transform 0.2s;
 }
 
 .share-icon:hover {
-    opacity: 0.7;
+    transform: scale(1.1); /* Увеличение при наведении */
 }
 
