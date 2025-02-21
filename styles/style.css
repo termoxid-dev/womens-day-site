@@ -80,9 +80,10 @@ h1 {
 }
 
 .social-buttons img {
-    width: 40px;
+    width: 40px; /* Фиксированный размер */
     height: 40px;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .social-buttons img:hover {
