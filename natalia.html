@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поздравление для Любови</title>
+    <title>Поздравление для Натальи</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Дорогая Наталья</h1>
-    <p>С Международным женским днём тебя! Желаю тебе счастья, добра, улыбок и пусть все твои мечты сбываются. Мы благодарны за твой труд и заботу, которые делают нашу жизнь комфортнее. Пусть твой день будет наполнен радостью и теплом, а жизнь — любовью и успехом.</p>
-    
-    <img src="images/natalia.jpg" alt="Фото Любови">
-    
-    <p>Твой любимый трек:</p>
-    <audio controls>
-        <source src="music/natalia.mp3" type="audio/mpeg">
-        Ваш браузер не поддерживает аудио.
-    </audio>
+    <div class="container">
+        <div class="content">
+            <!-- Фото Натальи -->
+            <div class="photo-container">
+                <img src="images/natalia.jpg" alt="Наталья" class="photo">
+            </div>
+            
+            <!-- Блок с поздравлением -->
+            <div class="text-container">
+                <h1>Дорогая Наталья</h1>
+                <p>С Международным женским днём тебя! Желаю тебе счастья, добра, улыбок и пусть все твои мечты сбываются. 
+                Мы благодарны за твой труд и заботу, которые делают нашу жизнь комфортнее. 
+                Пусть твой день будет наполнен радостью и теплом, а жизнь — любовью и успехом.</p>
 
-    <br>
-    <a href="index.html">Назад</a>
+                <!-- Музыка -->
+                <audio controls>
+                    <source src="music/natalia.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоэлемент.
+                </audio>
+
+                <br>
+                <a href="index.html" class="button">Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
