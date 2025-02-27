@@ -116,10 +116,14 @@ p {
 
 /* 📱 Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 14px; /* Уменьшаем размер шрифта для удобства */
-        padding: 10px; /* Добавляем отступы */
+    .photo {
+        display: block !important;
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
     }
+}
 
     .container {
         display: flex;
