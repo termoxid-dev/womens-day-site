@@ -94,6 +94,7 @@ p {
 
 /* Фото */
 .photo {
+    display: block !important;
     width: 100%; /* Ширина фото */
     max-width: 300px;
     height: auto; /* Автоматическая высота */
