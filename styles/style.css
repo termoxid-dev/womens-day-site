@@ -77,3 +77,37 @@ p {
     transform: scale(1.2);
 }
 
+/* Контейнер для фото и текста */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Блок с фото */
+.photo-container {
+    flex: 1;
+    text-align: left;
+}
+
+/* Фото */
+.photo {
+    width: 250px;  /* Ширина фото */
+    height: 250px; /* Высота фото */
+    object-fit: cover; /* Обрезка фото без искажений */
+    border-radius: 10px; /* Закруглённые края */
+}
+
+/* Блок с текстом */
+.text-container {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-left: 20px;
+}
+
