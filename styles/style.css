@@ -1,59 +1,78 @@
+/* Общий фон */
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffe6ea;
     text-align: center;
-    background-color: #ffe5e5;
     margin: 0;
     padding: 0;
 }
 
+/* Контейнер с поздравлением */
 .container {
-    background: white;
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Заголовок */
 h1 {
-    color: #d63333;
+    color: #d60052;
     font-size: 24px;
 }
 
-button {
-    background: #ff4081;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.1s;
+/* Описание */
+p {
     font-size: 16px;
+    color: #333;
 }
 
-button:hover {
-    background: #d6336c;
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-.buttons {
+/* Кнопки с именами */
+.button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    margin-top: 15px;
 }
 
-.share-icons {
+.button {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #e6006e;
+    transform: scale(1.1);
+}
+
+/* Стили для иконок соцсетей */
+.share-buttons {
     margin-top: 20px;
 }
 
-.share-icons a img {
+.share-buttons img {
     width: 40px;
     height: 40px;
-    margin: 0 10px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.share-buttons img:hover {
+    transform: scale(1.2);
 }
 
