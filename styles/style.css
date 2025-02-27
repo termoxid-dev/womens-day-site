@@ -37,24 +37,72 @@ body {
 /* Фото */
 .photo {
     display: block !important;
-    width: 100%; /* Ширина фото */
+    width: 100%;
     max-width: 300px;
-    height: auto; /* Автоматическая высота */
-    border-radius: 15px; /* Скругленные углы */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень */
-    object-fit: contain; /* Вписывает изображение без обрезки */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+}
+
+/* ✅ Исправляем пропавшие кнопки (делаем их настоящими кнопками) */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #e6006e;
+    transform: scale(1.1);
+}
+
+/* ✅ Исправляем размер иконок VK и Telegram */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-buttons img {
+    width: 40px; /* Фиксированный размер иконок */
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-buttons img:hover {
+    transform: scale(1.2);
 }
 
 /* 📱 Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
     .content {
-        flex-direction: column; /* Фото сверху, текст снизу */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .photo {
-        width: 100%; /* Фото на всю ширину */
+        width: 90%;
         max-width: 250px;
         height: auto;
         margin-bottom: 15px;
