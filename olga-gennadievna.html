@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поздравление для Любови</title>
+    <title>Поздравление для Ольги Геннадьевны</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Дорогая Ольга, с 8 Марта!</h1>
-    <p>Мы Вас сердечно поздравляем с праздником 8 Марта! Ваша точность и организованность делают нашу команду сильнее и сплоченнее. Мы желаем Вам счастья, любви и успехов во всех Ваших начинаниях. Пусть этот день будет окружен улыбками близких и наполнен особым светом весны, а новые возможности принесут Вам вдохновение и радость. С праздником!</p>
-    
-    <img src="images/olga-gennadievna.jpg" alt="Фото Любови">
-    
-    <p>Твой любимый трек:</p>
-    <audio controls>
-        <source src="music/olga-gennadievna.mp3" type="audio/mpeg">
-        Ваш браузер не поддерживает аудио.
-    </audio>
+    <div class="container">
+        <div class="content">
+            <!-- Фото Ольги Геннадьевны -->
+            <div class="photo-container">
+                <img src="images/olga-gennadievna.jpg" alt="Ольга Геннадьевна" class="photo">
+            </div>
+            
+            <!-- Блок с поздравлением -->
+            <div class="text-container">
+                <h1>Дорогая Ольга</h1>
+                <p>Мы Вас сердечно поздравляем с праздником 8 Марта! Ваша точность и организованность делают нашу команду сильнее и сплоченнее.  
+                Мы желаем Вам счастья, любви и успехов во всех Ваших начинаниях. Пусть этот день будет окружен улыбками близких и наполнен особым светом весны,  
+                а новые возможности принесут Вам вдохновение и радость. С праздником!</p>
 
-    <br>
-    <a href="index.html">Назад</a>
+                <!-- Музыка -->
+                <audio controls>
+                    <source src="music/olga-gennadievna.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудиоэлемент.
+                </audio>
+
+                <br>
+                <a href="index.html" class="button">Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
