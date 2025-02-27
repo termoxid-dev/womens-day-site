@@ -37,14 +37,14 @@ body {
 /* Фото */
 .photo {
     display: block !important;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    object-fit: contain;
     visibility: visible !important;
     opacity: 1 !important;
+    width: 100%; /* Убедимся, что фото адаптивное */
+    max-width: 400px; /* Можно увеличить, если нужно */
+    height: auto;
+    object-fit: contain; /* Обрезка фото */
+    z-index: 10 !important;
+    position: relative !important;
 }
 
 /* ✅ Исправляем пропавшие кнопки (делаем их настоящими кнопками) */
