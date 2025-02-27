@@ -1,7 +1,7 @@
 /* Общий фон */
 body {
     font-family: Arial, sans-serif;
-    background: url('../images/tulips-bouquet-pink-background-with-copyspace.jpg') no-repeat center center fixed;
+    background-image: url('images/tulips-bouquet-pink-background-with-copyspace.webp');
     background-size: cover;
     text-align: center;
     margin: 0;
@@ -96,7 +96,7 @@ p {
 .photo {
     display: block !important;
     width: 100%; /* Ширина фото */
-    max-width: 300px;
+    max-width: 400px;
     height: auto; /* Автоматическая высота */
     border-radius: 15px; /* Скругленные углы */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень */
