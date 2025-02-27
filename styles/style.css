@@ -43,6 +43,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     object-fit: contain;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 /* ✅ Исправляем пропавшие кнопки (делаем их настоящими кнопками) */
@@ -83,8 +85,8 @@ body {
 }
 
 .social-buttons img {
-    width: 40px; /* Фиксированный размер иконок */
-    height: 40px;
+    width: 40px !important; /* Фиксированный размер */
+    height: 40px !important;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
