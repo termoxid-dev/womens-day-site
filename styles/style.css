@@ -120,19 +120,30 @@ p {
     }
 
     .container {
-        flex-direction: column; /* Размещаем блоки в колонку */
+        display: flex;
+        flex-direction: column; /* Размещаем элементы в колонку */
         align-items: center; /* Выравниваем по центру */
         text-align: center; /* Текст тоже по центру */
     }
 
     .photo {
-        width: 80%; /* Фотография занимает 80% ширины экрана */
-        height: auto; /* Автоматическая высота */
+        width: 90%; /* Делаем фото адаптивным */
+        max-width: 300px; /* Ограничиваем максимальный размер */
+        height: auto; /* Сохраняем пропорции */
+        margin-bottom: 15px; /* Отступ после фото */
+        display: block; /* Убедимся, что фото не скрыто */
     }
 
     .message {
         width: 90%; /* Уменьшаем блок с поздравлением */
         padding: 15px; /* Делаем отступы удобными */
+        background-color: white; /* Добавляем фон */
+        border-radius: 10px; /* Закругляем края */
+    }
+
+    .audio-container {
+        width: 90%; /* Ограничиваем ширину плеера */
+        margin-top: 15px; /* Отступ перед плеером */
     }
 
     .button {
@@ -142,8 +153,10 @@ p {
     }
 
     .social-buttons {
-        flex-direction: column; /* Иконки соцсетей в колонку */
-        gap: 10px; /* Отступ между иконками */
+        display: flex;
+        flex-direction: row; /* Иконки соцсетей в строку */
+        justify-content: center;
+        gap: 15px; /* Отступ между иконками */
     }
 }
 
