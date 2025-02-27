@@ -19,41 +19,25 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Контейнер для фото и текста */
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 50px auto;
+/* Заголовок */
+h1 {
+    color: #d60052;
+    font-size: 24px;
 }
 
-/* Блок с фото */
-.photo-container {
-    flex: 1;
-    text-align: left;
+/* Описание */
+p {
+    font-size: 16px;
+    color: #333;
 }
 
-/* Фото */
-.photo {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: 100%; /* Убедимся, что фото адаптивное */
-    max-width: 400px; /* Можно увеличить, если нужно */
-    height: auto;
-    object-fit: contain; /* Обрезка фото */
-    z-index: 10 !important;
-    position: relative !important;
-}
-
-/* ✅ Исправляем пропавшие кнопки (делаем их настоящими кнопками) */
+/* Кнопки с именами */
 .button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .button {
@@ -76,23 +60,58 @@ body {
     transform: scale(1.1);
 }
 
-/* ✅ Исправляем размер иконок VK и Telegram */
-.social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+/* Стили для иконок соцсетей */
+.share-buttons {
     margin-top: 20px;
 }
 
-.social-buttons img {
-    width: 40px !important; /* Фиксированный размер */
-    height: 40px !important;
+.share-buttons img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-.social-buttons img:hover {
+.share-buttons img:hover {
     transform: scale(1.2);
+}
+
+/* Контейнер для фото и текста */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Блок с фото */
+.photo-container {
+    flex: 1;
+    text-align: left;
+}
+
+/* Фото */
+.photo {
+    display: block !important;
+    width: 100%; /* Ширина фото */
+    max-width: 300px;
+    height: auto; /* Автоматическая высота */
+    border-radius: 15px; /* Скругленные углы */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень */
+    object-fit: contain; /* Вписывает изображение без обрезки */
+}
+
+/* Блок с текстом */
+.text-container {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-left: 20px;
 }
 
 /* 📱 Адаптация для мобильных устройств */
