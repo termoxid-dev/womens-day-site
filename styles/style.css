@@ -94,7 +94,8 @@ p {
 
 /* Фото */
 .photo {
-    width: 300px; /* Ширина фото */
+    width: 100%; /* Ширина фото */
+    max-width: 300px;
     height: auto; /* Автоматическая высота */
     border-radius: 15px; /* Скругленные углы */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Тень */
