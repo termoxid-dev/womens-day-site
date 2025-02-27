@@ -1,7 +1,8 @@
 /* Общий фон */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffe6ea;
+    background: url('images/tulips-bouquet-pink-background-with-copyspace.jpg') no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
     margin: 0;
     padding: 0;
