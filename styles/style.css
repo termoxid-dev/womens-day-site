@@ -1,85 +1,59 @@
-/* Основные стили */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #ffe6e6;
+    background-color: #ffe5e5;
     margin: 0;
     padding: 0;
 }
 
-/* Контейнер с поздравлениями */
 .container {
-    background-color: white;
-    border-radius: 10px;
+    background: white;
     padding: 20px;
-    margin: 30px auto;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
 }
 
-/* Заголовок */
 h1 {
-    color: #d32f2f;
+    color: #d63333;
+    font-size: 24px;
 }
 
-/* Кнопки с именами */
-.button-container {
-    margin-top: 15px;
-}
-
-.button-container button {
-    background-color: #ff4081;
+button {
+    background: #ff4081;
     color: white;
     border: none;
     padding: 10px 15px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
     font-size: 16px;
 }
 
-.button-container button:hover {
-    background-color: #e91e63;
+button:hover {
+    background: #d6336c;
 }
 
-/* Социальные кнопки */
-.social-icons {
-    margin-top: 20px;
+button:active {
+    transform: scale(0.95);
+}
+
+.buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
-.social-icons a img {
-    width: 40px; /* Размер иконок */
+.share-icons {
+    margin-top: 20px;
+}
+
+.share-icons a img {
+    width: 40px;
     height: 40px;
-    border-radius: 50%; /* Делаем круглые */
-    transition: transform 0.2s;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.1); /* Эффект увеличения при наведении */
-}
-
-/* Персональные страницы */
-.personal-container {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 30px auto;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.personal-container img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.personal-container audio {
-    width: 100%;
-    margin-top: 10px;
+    margin: 0 10px;
 }
 
