@@ -19,64 +19,6 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Заголовок */
-h1 {
-    color: #d60052;
-    font-size: 24px;
-}
-
-/* Описание */
-p {
-    font-size: 16px;
-    color: #333;
-}
-
-/* Кнопки с именами */
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.button {
-    background-color: #ff4081;
-    color: white;
-    padding: 12px 18px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-    background-color: #e6006e;
-    transform: scale(1.1);
-}
-
-/* Стили для иконок соцсетей */
-.share-buttons {
-    margin-top: 20px;
-}
-
-.share-buttons img {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.share-buttons img:hover {
-    transform: scale(1.2);
-}
-
 /* Контейнер для фото и текста */
 .content {
     display: flex;
@@ -103,66 +45,47 @@ p {
     object-fit: contain; /* Вписывает изображение без обрезки */
 }
 
-/* Блок с текстом */
-.text-container {
-    flex: 2;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    margin-left: 20px;
-}
-
 /* 📱 Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Фото сверху, текст снизу */
+        align-items: center;
+        text-align: center;
+    }
+
     .photo {
-        display: block !important;
-        width: 90%;
+        width: 100%; /* Фото на всю ширину */
         max-width: 250px;
         height: auto;
-        margin: 0 auto;
-    }
-}
-
-    .container {
-        display: flex;
-        flex-direction: column; /* Размещаем элементы в колонку */
-        align-items: center; /* Выравниваем по центру */
-        text-align: center; /* Текст тоже по центру */
+        margin-bottom: 15px;
+        display: block !important;
     }
 
-    .photo {
-        width: 90%; /* Делаем фото адаптивным */
-        max-width: 300px; /* Ограничиваем максимальный размер */
-        height: auto; /* Сохраняем пропорции */
-        margin-bottom: 15px; /* Отступ после фото */
-        display: block; /* Убедимся, что фото не скрыто */
-    }
-
-    .message {
-        width: 90%; /* Уменьшаем блок с поздравлением */
-        padding: 15px; /* Делаем отступы удобными */
-        background-color: white; /* Добавляем фон */
-        border-radius: 10px; /* Закругляем края */
+    .text-container {
+        width: 90%;
+        text-align: center;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
     .audio-container {
-        width: 90%; /* Ограничиваем ширину плеера */
-        margin-top: 15px; /* Отступ перед плеером */
+        width: 90%;
+        margin-top: 15px;
     }
 
     .button {
-        width: 100%; /* Кнопки занимают всю ширину */
-        font-size: 16px; /* Увеличиваем текст кнопки */
-        padding: 10px 0; /* Добавляем отступы */
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 0;
     }
 
     .social-buttons {
         display: flex;
-        flex-direction: row; /* Иконки соцсетей в строку */
+        flex-direction: row;
         justify-content: center;
-        gap: 15px; /* Отступ между иконками */
+        gap: 15px;
     }
 }
 
